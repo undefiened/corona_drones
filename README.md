@@ -37,6 +37,8 @@ Or, a json file in the following format can be used (please note that we describ
 
 Where `TotBef` property represents the population living in a cell centered in coordinate `geometry` -> `coordinates`.
 
+Also please see `centroids100x100.geojson` as an example.
+
 ### Computing tours
 Running `compute_tours.py` will compute tours. There are several parameters in the top of this file which can be adjusted to select drones capacity, etc -- they all are explained in the code file itself with comments.
 
