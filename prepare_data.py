@@ -1,3 +1,16 @@
+# We publish the code under MIT license as it is the most permissible license we have managed to find and because Free Software Foundation **does not recommend** using informal licenses like "Do whatever you want" (https://www.gnu.org/licenses/license-list.en.html#informal).
+#
+# However, our knowledge in the area of licensing is limited, therefore feel free to contact the authors if you feel that this license does not work.
+#
+# Copyright 2020 https://github.com/undefiened/
+#
+# Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+#
+# The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+#
+# THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+
 import pickle
 from copy import deepcopy
 from os import path
@@ -8,7 +21,7 @@ import numpy as np
 import simplejson
 
 
-HOSPITAL = {'lon': 16.1788, 'lat': 58.5633, 'Population': 0}
+HOSPITAL = {'lon': 16.1788, 'lat': 58.5633, 'Population': 0} # Location of the test distribution center
 
 
 def near_split(x, num_bins):
@@ -16,6 +29,8 @@ def near_split(x, num_bins):
     Splits an integer number "x" into a list of "num_bins" bins while keeping the difference between values as small as possible.
 
     E.g., for x = 50, num_bins = 3 the result will be [17, 17, 16]
+
+    A courtesy of https://stackoverflow.com/a/48918717
 
     :param x: Integer number representing the number to divide into bins
     :param num_bins: Integer number representing the number of bins
