@@ -46,6 +46,8 @@ Running `compute_tours.py` will compute tours. There are several parameters in t
 Running `assign_tours.py` will compute the optimal assignment of tours to drones which minimizes the maximum makespan. Again, there are several parameters in the top of the file, which are explained in the code comments.
 
 ## License
+The data in the file `centroids100x100.geojson` is obtained from the geographical data courtesy of Statistics Sweden (https://scb.se/) provided by Swedish University of Agricultural Sciences (https://www.slu.se/) under FUK (Forskning, utbildning och kulturverksamhet) license (https://www.geodata.se/anvanda/forskning-utbildning-och-kulturverksamheter/).
+
 We publish the code under MIT license as it is the most permissible license we have managed to find and because Free Software Foundation **does not recommend** using informal licenses like "Do whatever you want" (https://www.gnu.org/licenses/license-list.en.html#informal).
 
 However, our knowledge in the area of licensing is limited, therefore feel free to contact the authors if you feel that this license does not work.
